@@ -1,3 +1,3 @@
-import './lib/core';
+import './lib/lib';
 
-$('a').hide().show();
+$('a').hide().show().toggle();
