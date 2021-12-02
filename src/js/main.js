@@ -1,7 +1,7 @@
 import './lib/lib';
 
-$('div').click(function () {
-    console.log(this);
+$('button').click(function () {
+    $(this).toggleClass('active');
 });
 
 function sayHello() {

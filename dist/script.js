@@ -104,6 +104,13 @@ $.prototype.init = function (selector) {
     return this;
   }
 
+  if (selector.tagName) {
+    this[0] = selector;
+    console.log(this[0]);
+    this.length = 1;
+    return this;
+  }
+
   Object.assign(this, document.querySelectorAll(selector));
   this.length = document.querySelectorAll(selector).length;
   return this;
@@ -305,8 +312,8 @@ _core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.toggle = function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_lib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/lib */ "./src/js/lib/lib.js");
 
-$('div').click(function () {
-  console.log(this);
+$('button').click(function () {
+  $(this).toggleClass('active');
 });
 
 function sayHello() {

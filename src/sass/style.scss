@@ -6,4 +6,14 @@
 div {
     margin: 0 auto;
     font-size: 60px;
+    cursor: pointer;
+}
+button {
+    width: 200px;
+    height: 100px;
+    background-color: green;
+    color: #fff;
+}
+.active {
+    background-color: red;
 }
