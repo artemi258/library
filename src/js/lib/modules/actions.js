@@ -27,7 +27,6 @@ $.prototype.click = function(callBack) {
     for (let i = 0; i < this.length; i++) {
         if (!callBack) {
             this[i].click();
-            console.log('click')
         } else {
             this[i].addEventListener('click', callBack)
         }
