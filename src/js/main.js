@@ -1,9 +1,12 @@
+import $ from './lib/core';
 import './lib/lib';
 
- $('button').setAtt('class', 'active').toggleAtt('class', 'active').toggleAtt('class', 'active').removeAtt('class');
+$('div').click(function() {
+     console.log($(this).index());
+});
 
 
 
-function sayHello() {
-        console.log('hello');
-}
+
+
+
