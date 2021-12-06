@@ -16,4 +16,6 @@ button {
 }
 .active {
     background-color: red;
+    opacity: 0;
+    display: none;
 }

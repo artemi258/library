@@ -15,4 +15,6 @@ button {
   color: #fff; }
 
 .active {
-  background-color: red; }
+  background-color: red;
+  opacity: 0;
+  display: none; }
